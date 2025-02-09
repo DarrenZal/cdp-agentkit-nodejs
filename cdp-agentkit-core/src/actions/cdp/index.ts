@@ -10,6 +10,7 @@ import { TradeAction } from "./trade";
 import { TransferAction } from "./transfer";
 import { WrapEthAction } from "./wrap_eth";
 import { WOW_ACTIONS } from "./defi/wow";
+import { mintKnowledge, MintKnowledgeAction } from "./mint_knowledge";
 
 /**
  * Retrieves all CDP action instances.
@@ -29,6 +30,7 @@ export function getAllCdpActions(): CdpAction<CdpActionSchemaAny>[] {
     new TradeAction(),
     new TransferAction(),
     new WrapEthAction(),
+    new MintKnowledgeAction()
   ];
 }
 
@@ -47,4 +49,5 @@ export {
   TradeAction,
   TransferAction,
   WrapEthAction,
+  MintKnowledgeAction,
 };
